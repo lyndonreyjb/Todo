@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1 class="main-title">TODO</h1>
+    <div class="container">
+      <ul class="list">
+        <!--To Do-->
+        <li class="column">
+          <div class="header">
+            <h1>To Do</h1>
+          </div>
+          <div id="to-do-details" class="custom-scroll">
+            <ul
+              class="items-list"
+              id="todo-list"
+              ondrop="drop(event)"
+              ondragover="dropItem(event)"
+              ondragenter="dragEnter(0)"></ul>
+          </div>
+          <div class="buttons">
+            <div class="add-btn" onclick="showInput(0)">
+              <div class="plus"></div>
+              <span>Add a card</span>
+            </div>
+            <div class="add-btn solid" onclick="hideInput(0)">
+              <span>Save</span>
+            </div>
+          </div>
+          <div class="add-container">
+            <div class="add-item" contenteditable="true"></div>
+          </div>
+        </li>
+        <!--Doing-->
+        <li class="column">
+          <div class="header">
+            <h1>Doing</h1>
+          </div>
+          <div id="doing-details" class="custom-scroll">
+            <ul
+              class="items-list"
+              id="doing-list"
+              ondrop="drop(event)"
+              ondragover="dropItem(event)"
+              ondragenter="dragEnter(1)"></ul>
+          </div>
+          <div class="buttons">
+            <div class="add-btn" onclick="showInput(1)">
+              <div class="plus"></div>
+              <span>Add a card</span>
+            </div>
+            <div class="add-btn solid" onclick="hideInput(1)">
+              <span>Save</span>
+            </div>
+          </div>
+          <div class="add-container">
+            <div class="add-item" contenteditable="true"></div>
+          </div>
+        </li>
+        <!--Review-->
+        <li class="column">
+          <div class="header">
+            <h1>Review</h1>
+          </div>
+          <div id="review-details" class="custom-scroll">
+            <ul
+              class="items-list"
+              id="review-list"
+              ondrop="drop(event)"
+              ondragover="dropItem(event)"
+              ondragenter="dragEnter(2)"></ul>
+          </div>
+          <div class="buttons">
+            <div class="add-btn" onclick="showInput(2)">
+              <div class="plus"></div>
+              <span>Add a card</span>
+            </div>
+            <div class="add-btn solid" onclick="hideInput(2)">
+              <span>Save</span>
+            </div>
+          </div>
+          <div class="add-container">
+            <div class="add-item" contenteditable="true"></div>
+          </div>
+        </li>
+        <!--Testing-->
+        <li class="column">
+          <div class="header">
+            <h1>Testing</h1>
+          </div>
+          <div id="testing-details" class="custom-scroll">
+            <ul
+              class="items-list"
+              id="testing-list"
+              ondrop="drop(event)"
+              ondragover="dropItem(event)"
+              ondragenter="dragEnter(3)"></ul>
+          </div>
+          <div class="buttons">
+            <div class="add-btn" onclick="showInput(3)">
+              <div class="plus"></div>
+              <span>Add a card</span>
+            </div>
+            <div class="add-btn solid" onclick="hideInput(3)">
+              <span>Save</span>
+            </div>
+          </div>
+          <div class="add-container">
+            <div class="add-item" contenteditable="true"></div>
+          </div>
+        </li>
+        <!--Done-->
+        <li class="column">
+          <div class="header">
+            <h1>Done</h1>
+          </div>
+          <div id="done-details" class="custom-scroll">
+            <ul
+              class="items-list"
+              id="done-list"
+              ondrop="drop(event)"
+              ondragover="dropItem(event)"
+              ondragenter="dragEnter(4)"></ul>
+          </div>
+          <div class="buttons">
+            <div class="add-btn" onclick="showInput(4)">
+              <div class="plus"></div>
+              <span>Add a card</span>
+            </div>
+            <div class="add-btn solid" onclick="hideInput(4)">
+              <span>Save</span>
+            </div>
+          </div>
+          <div class="add-container">
+            <div class="add-item" contenteditable="true"></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
